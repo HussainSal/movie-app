@@ -1,0 +1,63 @@
+.Form {
+    width: 70%;
+    height: max-content;
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, #f0f0f054, #ffffff2b);
+    backface-visibility: hidden;
+
+}
+
+.Form p {
+    margin: 0;
+    color: var(--lightGrey);
+}
+
+.Form input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 17px;
+    padding: 0 .5rem;
+    color: var(--tertiaryColorWhite);
+    font-family: serif;
+    margin-right: 1rem;
+    border: 0;
+    background: transparent;
+    transition: all .1s;
+    backface-visibility: hidden;
+}
+.Form input:focus {
+    outline: none;
+}
+
+.Form img {
+    width: 2rem;
+}
+.Form button {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .Form {
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Form {
+        width: 80%;
+    }
+    .Form input {
+        height: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Form {
+        width: 90%;
+    }
+}

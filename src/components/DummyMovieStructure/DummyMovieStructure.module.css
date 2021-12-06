@@ -1,0 +1,97 @@
+.DummyMovie {
+    width: 250px;
+    min-height: 28rem;
+    background-color: var(--secondaryColorDark);
+    padding: .3rem;
+    position: relative;
+    backface-visibility: hidden;
+    /* pointer-events: none; */
+}
+
+.MovieRating {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    margin: 0;
+    border-radius: 10px;
+    padding: .1rem .3rem;
+}
+
+.Image {
+    display: block;
+    width: 100%;
+    height: 65%;
+}
+
+.Name {
+    margin: auto;
+    width: 50%;
+    height: 2rem;
+    margin: 1.3rem auto;
+}
+
+.DummyMovie div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Type {
+    width: 40%;
+    height: 1rem;
+}
+
+.Date {
+    width: 40%;
+    height: 1rem;
+}
+
+.Image, .MovieRating, .Name, .Type, .Date {
+    background-color: var(--primaryColorBluish);
+}
+
+.DummyMovie, .Image, .Name, .Type, .Date {
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .DummyMovie {
+        width: 18vw;
+        min-height: 32vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .DummyMovie {
+        width: 11rem;
+        min-height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .DummyMovie {
+        width: 12rem;
+        min-height: 22rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .DummyMovie {
+        width: 11rem;
+        min-height: 21rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .DummyMovie {
+        width: 9.9rem;
+        min-height: 19rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .DummyMovie {
+        width: 11rem;
+    }
+}

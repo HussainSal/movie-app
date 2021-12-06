@@ -1,0 +1,26 @@
+.pagination {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+    backface-visibility: hidden;
+}
+.pagination button, .currentPage {
+    display: inline-block;
+    margin: .2rem;
+    padding: .2rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    background-color: var(--quinaryColorLightBlue);
+    color: #fff;
+}
+
+.pagination button {
+    cursor: pointer;
+}
+
+.NotAllowed {
+    background-color: var(--darkGrey) !important;
+    cursor: not-allowed !important;
+}

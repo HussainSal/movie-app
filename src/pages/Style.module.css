@@ -1,0 +1,45 @@
+.Response {
+    padding-bottom: 5rem;
+}
+
+.Heading {
+    font-family: Open Sans; 
+    font-style: normal; 
+    font-weight: 300; 
+    font-size:2.5vw; 
+    color: transparent;
+    background-image: linear-gradient(to right bottom, var(--lightGrey) 55% , var(--secondaryColorDark) );
+    -webkit-background-clip: text;
+    backface-visibility: hidden;
+  
+}
+
+@media only screen and (max-width: 1400px) {
+    .Heading {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Heading {
+        font-size: 2.1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Heading {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Heading {
+        font-size: 2.1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .Heading {
+        font-size: 1.9rem;
+    }
+}

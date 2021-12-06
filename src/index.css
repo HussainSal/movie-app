@@ -1,0 +1,53 @@
+:root {
+  --primaryColorBluish: #212e4d; /* bluish */
+  --secondaryColorDark: #0b1422; /* dark */
+  --tertiaryColorWhite: #f5f6fa; /* white */
+  --quaternaryColorResish: #e84118; /* redish */
+  --quinaryColorLightBlue: #098fd5; /*blue */
+  --lightGrey: #ccc;
+  --darkGrey: #424141;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: 100vh;
+  background-color: var(--primaryColorBluish);
+  color: var(--tertiaryColorWhite);
+  overflow: hidden;
+  font-size: 16px;
+  backface-visibility: hidden;
+
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+
+/* 
+primary color: #212e4d; // bluish
+secondary color: #151f2d; // dark
+tertiary color: #f5f6fa; // white
+quaternary color: #e84118; // redish
+quinary color: #098fd5
+*/

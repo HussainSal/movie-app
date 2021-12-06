@@ -1,0 +1,57 @@
+.MovieList {
+    display: grid;
+    grid-template-columns: repeat(4 ,20%);
+    grid-gap: 5rem 0;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 2rem;
+    /* margin-bottom: 10rem; */
+    backface-visibility: hidden;
+
+}
+
+.MovieList a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+@media only screen and (max-width: 1400px) {
+    .MovieList {
+        grid-gap: 5rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .MovieList {
+        grid-gap: 5rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .MovieList {
+        grid-gap: 3rem;
+        grid-template-columns: repeat(3, 25%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .MovieList {
+        grid-template-columns: repeat(2, 40%);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .MovieList {
+        grid-gap: 4rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .MovieList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

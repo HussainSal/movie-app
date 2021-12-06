@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-movie-app"]=this["webpackJsonpreact-movie-app"]||[]).push([[4],{51:function(e,t,i){"use strict";i.r(t);i(1);var n=i(0);t.default=function(e){return Object(n.jsx)("div",{children:Object(n.jsxs)("h1",{style:{fontSize:"5rem",fontWeight:"300"},children:[e.type," Not Found!!"]})})}}}]);
+//# sourceMappingURL=4.ab031f16.chunk.js.map

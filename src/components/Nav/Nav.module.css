@@ -1,0 +1,160 @@
+.Nav {
+    width: 100%;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0 5rem;
+    background-color: var(--secondaryColorDark);
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    box-shadow: 0px 3px 3px rgba(0,0,0,.3);
+}
+
+.Nav a {
+    text-decoration: none;
+    color: var(--lightGrey);  
+    position: relative;
+    z-index: 5;
+}
+
+.ActiveLink {
+    transform: scale(1.1);
+    animation: popup .15s linear;
+    filter: contrast(2);
+    font-weight: bold;
+}
+
+.ActiveLink .TrendingIcon {
+    filter: drop-shadow(0px 0px 10px #ff0000)
+}
+.ActiveLink .MovieIcon {
+    filter: drop-shadow(0px 0px 15px #ffffff4d);
+}
+.ActiveLink .TvSeriesIcon {
+    filter: drop-shadow(0px 0px 15px #ffffff4d);
+}
+.ActiveLink .SearchIcon {
+    filter: drop-shadow(0px 0px 10px #ffbf00);
+}
+
+
+
+
+.Nav a:active::after {
+    content: '';
+    display: block;
+    background-color: rgba(255,255,255,.2);
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    border-radius: 500px;
+    animation: bubbleUp .3s ease-out;
+
+}
+.Nav img {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    margin: auto;
+}
+
+
+@keyframes bubbleUp {
+    
+    60% {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(224, 224, 224, .5);
+        border-radius: 20px;
+    }
+
+    100% {
+        width: 130%;
+        height: 130%;
+        background-color: rgba(224, 224, 224, 0);
+        border-radius: 0;
+    }
+    
+}
+
+@keyframes popup {
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .Nav {
+        height: 6.5rem;
+    }
+    .Nav img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Nav {
+        height: 6rem;
+    }
+    .Nav img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    .ActiveLink {
+        font-weight: 500;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .Nav {
+        height: 5rem;
+        grid-gap: 0 8vw;
+        font-size: 15px;
+    }
+    .Nav img {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .ActiveLink {
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Nav {
+        height: 5rem;
+        grid-template-columns: repeat(4, 4rem);
+    }
+    .Nav img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .ActiveLink {
+        transform: scale(1.07);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Nav img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .Nav {
+        grid-template-columns: repeat(4, 4rem);
+        grid-gap: 0 1rem;
+    }
+    .Nav img {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}
